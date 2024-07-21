@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "IosevkaNerdFont:pixelsize=20:antialias=true:autohint=true";
+static char *font = "IosevkaNerdFont:pixelsize=26:antialias=true:autohint=true";
 static int borderpx = 2;
 
 /*
@@ -94,37 +94,37 @@ char *termname = "st-256color";
 unsigned int tabspaces = 8;
 
 /* background opacity */
-float alpha = 0.9;
+float alpha = 0.85;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
 	/* 8 normal colors */
-	"#414868",
-	"#f7768e",
-	"#73daca",
-	"#e0af68",
-	"#7aa2f7",
-	"#bb9af7",
-	"#b4f9f8",
-	"#c0caf5",
+	"black",
+	"red3",
+	"green3",
+	"yellow3",
+	"blue2",
+	"magenta3",
+	"cyan3",
+	"gray90",
 
 	/* 8 bright colors */
-	"#70758d",
-	"#f998aa",
-	"#96e3d7",
-	"#e7c38d",
-	"#9bb9f9",
-	"#cbb3f9",
-	"#c6faf9",
-	"#cfd7f7",
+	"gray50",
+	"red",
+	"green",
+	"yellow",
+	"#5c5cff",
+	"magenta",
+	"cyan",
+	"white",
 
 	[255] = 0,
 
 	/* more colors can be added after 255 to use with DefaultXX */
 	"#cccccc",
 	"#555555",
-	"#a9b1d6", /* default foreground colour */
-	"#13141c", /* default background colour */
+	"gray90", /* default foreground colour */
+	"black", /* default background colour */
 };
 
 
